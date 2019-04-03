@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="qwer">
+			{{qq}}
+			<my-header :todo ="qq"
+				></my-header>
+		</div>
+	</body>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Vue.component ("my-header",{
+		    name : "my-header",
+		        data: function () {
+		        	return {
+		        		lo:"xx" 	
+		        	}
+		        },
+		   		 template:`  
+		        <div class="header-fun"> 
+		        <a href="#">{{todo}}</a>
+		         <a href="#">{{lo}}</a>
+		        </div>
+		        `,
+		        props:{
+		        todo:{
+		        	type:String,
+		        	default:""
+		        },
+		        q:{
+		        	type:String,
+		       		default:""
+		        }
+		        }
+		});
+		var q=new Vue({
+			el:"#qwer",
+			data: function() {
+				return {
+					qq:"old"
+				}
+			}
+		})
+	</script>
+</html>
