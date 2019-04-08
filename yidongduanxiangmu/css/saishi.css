@@ -1,0 +1,194 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+
+.header-top{
+	display: flex;
+	justify-content: space-around;
+	height: 1rem;
+	width: 100%;
+	background-color: black;
+	background-size: 100%;
+}
+.header-top-left{
+	line-height: 1rem;
+}
+.header-top-left img{
+	width: 0.6rem;
+	margin-left: -0.6rem;
+	margin-top: -0.1rem;
+}
+.header-top-mig{
+	height: 0.9rem;
+	width: 30%;
+	margin-left: -1.6rem;
+}
+.ulOne{
+	margin-top: 0.1rem;
+}
+.ulOne li{
+	font-size: 0.25rem;
+	color: white;
+}
+.header-top-right p{
+	height: 0.5rem;
+	width: 1.3rem;
+	background-color: #DB9E3F;
+	margin-top: 0.2rem;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.2rem;
+}
+
+.header-down{
+	height: 1rem;
+	width: 100%;
+	background-color: #DB9E3F;
+	margin-top: -0.1rem;
+}
+.ulTwo{
+	display: flex;
+	height: 0.9rem;
+	justify-content: space-around;
+	font-size: 0.3rem;
+	color: white;
+	line-height: 1rem;
+}
+.ulTwo li:nth-of-type(3){
+	border-bottom: 0.05rem solid white;
+}
+.head-one{
+	width: 100%;
+	height: 0.6rem;
+	/*border: 1px solid black;*/
+}
+.head-one li{
+	margin-left: 0.5%;
+	font-size: 0.24rem;
+}
+.head-one li a{
+	color: black;
+}
+.head-two {
+	
+}
+.head-two-left h2{
+	color: deepskyblue;
+}
+.head-two-right{
+	margin-left: -20%;
+	margin-top: -1%;
+}
+.head-two-right h2{
+	border: 1px solid #B4B4B4;
+	text-align: center;
+	padding: 5%;
+	transform:scale(0.5);
+	border-radius:0.5rem ;
+	color: #B4B4B4;
+}
+.head-two-th{
+	margin-top: -4%;
+}
+.head-two-ths{
+	margin-top: -3%;
+}
+.head-two-ths h2{
+	border: 1px solid #B4B4B4;
+	text-align: center;
+	padding: 5%;
+	transform:scale(0.5);
+	border-radius:0.5rem ;
+	color: white;
+	background-color: deepskyblue;
+}
+.bodys{
+	width:100% ;
+	height: 3rem;
+	border: 1px solid #B4B4B4;
+	background-color: black;
+	text-align: center;
+	line-height: 3rem;
+}
+.bodys img{
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius:0.6rem;
+}
+.bodys-two img{
+	width: 100%;
+	height: 3rem;
+}
+.bodys-section{
+	background: #F0F0F0;
+}
+.bodys-section h2{
+	width: 100%;
+	height: 0.5rem;
+	/*border: 1px solid #A1A1A1;*/
+	line-height: 0.5rem;
+	color: #A1A1A1;
+	background: #E3E3E3;
+	text-align: center;
+	
+}
+
+.bodys-section li{
+	width: 100%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	margin-top: 3%;
+	border-bottom:0.06rem solid white ;
+}
+.bodys-section li a{
+	font-size: 0.27rem;
+	color: black;
+}
+
+.bodys-section li small{
+	float: right;
+	font-size: 0.28rem;
+	color:#9D9D9D ;
+}
+
+
+
+
+
+
+
+
+
+
+
+【春季赛课代表】一图看懂今日看点，谁是东部最强？天才少年花海挑战常规赛MVP虔诚03/22
+清扬与KPL王者荣耀职业联赛达成合作03/21
+RW侠 vs EDG.M，侠客风范与骑士精神的对决03/21
+春季赛课代表：侠客 vs 骑士 RW侠与EDG.M谁能笑到最后03/21
+【春季赛课代表】一图看懂今日看点，RNG.M vs XQ，即将上演猪苗保卫战03/09
+【春季赛课代表】一图看懂今日看点，越塔干冲冲冲，谁能莽出奇迹03/08
+【春季赛课代表】一图看懂今日看点，eStarPro天才新人参见03/07
+竞向世界 该我上场KPL发力国际化 向世界传递中国文化03/06
+【春季赛课代表】一图看懂今日看点，开赛首日边射能否上场03/06
+2019年KPL春季赛今日16时30分打响，四重惊喜看点等你来看！03/06
+KPL新赛季会员合影开启，来王者营地助威战队赢限定勋章03/05
+2019KPL春季赛明日开赛！横刀立马剑指银龙03/05
+2019KPL春季赛倒计时2天！乾坤未定，英雄少年竞登场！03/04
+开赛倒计时3天！2019KPL春季赛全新出征，初心未泯否极泰来03/03
+最强新人 该我上场九尾、花海揽获“周最佳”，最佳阵容东部惨遭西部碾压03/19
+【春季赛课代表】一图看懂今日看点，QG连败能否终结？最强新人XQ九尾能否带队连胜03/17
+青春无敌XQ.九尾：要莽就莽到底，赛前AT叫我别在中路打架03/16
+【春季赛课代表】一图看懂今日看点，新星对决！最强新人，该我上场03/16
+解说英凯：KPL的“新人时代”，后浪的冲击让我们更加努力03/15
+GK.青枫：我小杜不怕你03/15
+春季赛课代表：西部重做连遇试金石03/15
+春季赛课代表：XQ新人挑战Hero大魔王03/14
+2019年KPL春季赛新人辈出，惊艳也许不止于此03/12
+冠军侧影：移动电竞在成都03/11
+已显示全部内容
+

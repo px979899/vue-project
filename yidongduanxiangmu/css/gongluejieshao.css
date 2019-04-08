@@ -1,0 +1,284 @@
+* {
+	padding: 0rem;
+	margin: 0rem;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100px;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+	border: 0rem;
+}
+
+a {
+	text-decoration: none;
+	color: transparent;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-around;
+	height: 1rem;
+	width: 100%;
+	background-color: black;
+	background-size: 100%;
+}
+
+.header-top-left {
+	line-height: 1rem;
+}
+
+.header-top-left img {
+	width: 0.6rem;
+}
+
+.header-top-mig {
+	height: 0.9rem;
+	width: 30%;
+	margin-left: -1rem;
+}
+
+.ulOne {
+	margin-top: 0.1rem;
+}
+
+.ulOne li {
+	font-size: 0.25rem;
+	color: white;
+}
+
+.header-top-right p {
+	height: 0.5rem;
+	width: 1.3rem;
+	background-color: #DB9E3F;
+	margin-top: 0.2rem;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.2rem;
+}
+
+.header-down {
+	height: 1rem;
+	width: 100%;
+	background-color: #DB9E3F;
+	margin-top: -0.1rem;
+}
+
+.ulTwo {
+	display: flex;
+	height: 0.9rem;
+	justify-content: space-around;
+	font-size: 0.3rem;
+	color: white;
+	line-height: 1rem;
+}
+
+.ulTwo li:nth-of-type(2) {
+	border-bottom: 0.05rem solid white;
+}
+
+.body-one {
+	width: 100%;
+}
+
+.body-one img {
+	width: 100%;
+}
+
+
+/*.swiper-pagination{
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius:0.1rem ;
+}*/
+
+.body-gang {
+	width: 100%;
+	height: 0.3rem;
+	background: #EDEDED;
+}
+
+.body-two {
+	width: 100%;
+	margin-top: 0.1rem;
+}
+
+.body-two-top {
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border-bottom: 0.01rem solid #EDEDED;
+}
+
+.body-two-top h4 {
+	height: 0.6rem;
+	line-height: 0.6rem;
+	margin-top: 0.0rem;
+}
+
+.body-two-bottom {
+	font-size: 0.19rem;
+}
+
+.body-two-bottom ul li {
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.2rem;
+	padding-bottom: 0.1rem;
+	border-bottom: 0.01rem solid #EDEDED;
+}
+
+.body-two-bottom ul li span:nth-of-type(1) span {
+	float: left;
+}
+
+.body-two-bottom ul li span {
+	float: right;
+}
+
+.body-two-bottom span img {
+	height: 0.2rem;
+}
+
+.body-two-bottom-ptwo {
+	margin-top: 0.4rem;
+}
+
+.rithreeimg {
+	height: 1.3395rem;
+}
+
+.zhouthreeimg {
+	height: 1.3395rem;
+}
+
+.yuethreeimg {
+	height: 1.3395rem;
+}
+
+.body-three-bottom ul {
+	margin-left: 0.1rem;
+	margin-top: 0.1rem;
+}
+
+.body-three-bottom ul li {
+	border-radius: 0.05rem;
+}
+
+.body-three-bottom-top li p {
+	width: 0.85rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	position: absolute;
+	top: 0.87rem;
+	border-radius: 0.05rem;
+	margin-left: 0.02rem;
+	text-align: center;
+	background: #7D7F7F;
+	color: white;
+	opacity: 0.7;
+}
+
+.body-three-bottom ul li input {
+	padding: 0.4rem 0.29rem 0.4rem 0.29rem;
+}
+
+.body-three-bottom ul li img {
+	width: 0.9rem;
+	height: 1rem;
+}
+
+.body-three-bottomone {
+	width: 100%;
+	height: 0.4rem;
+	background: #EDEDED;
+}
+
+.body-three-bottomtwo {
+	margin-top: 0.18rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 0.01rem solid #EDEDED;
+}
+
+.body-three-bottomtwoimgone img {
+	width: 3.2rem;
+	height: 1.7rem;
+}
+
+.body-three-bottomtwo p {
+	margin-top: 0.06rem;
+}
+
+.body-three-bottomtwoimgtwo img {
+	height: 0.2rem;
+	width: 0.2rem;
+}
+
+.body-three-bottomthree {
+	margin-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 0.01rem solid #EDEDED;
+}
+
+.body-three-bottomthree p {
+	font-size: 0.18rem;
+	margin-top: 0.02rem;
+}
+
+.body-three-bottomthree img {
+	height: 1rem;
+	width: 2.6rem;
+}
+
+.body-three-bottomfour span {
+	color: orange;
+}
+
+.erjione {
+	position: absolute;
+	z-index: 10;
+	height: 4rem;
+	background: white;
+	margin-left: 0.2rem;
+	border: 1px solid #EAEDEF;
+	border-right: 1px solid white;
+}
+
+.erjione-left p {
+	text-align: center;
+}
+
+
+
+.erjione-right ul li {
+font-size: 0.245rem;
+	border-radius:0rem ;
+	padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+	background:#F5F5F5;
+}
+.erjione-right ul li:nth-of-type(1){
+	background:orange;
+	color: white;
+}
+
+.body-foure-bottom ul li{
+	margin-left: 0.1rem;
+}
+.body-six-bottom ul li:nth-of-type(1){
+	margin-left: 0.1rem;
+}
+.body-six-bottom ul li:nth-of-type(2){
+	margin-left: 1rem;
+}
+.body-six-bottom ul li:nth-of-type(3){
+	margin-left: 1rem;
+}
+.body-six-bottom ul li:nth-of-type(4){
+	margin-left: 1rem;
+}

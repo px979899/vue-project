@@ -1,0 +1,779 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="css/gongluejieshao.css" />
+	<link rel="stylesheet" type="text/css" href="css/gongluejieshaoreset.css" />
+
+	<body>
+		<div id="wrap">
+			<div class="header">
+				<div class="header-top">
+					<div class="header-top-left">
+						<img src="img/01.PNG" />
+					</div>
+					<div class="header-top-mig">
+						<ul class="ulOne">
+							<li>{{ wangzhe }}</li>
+							<li>{{ tuandui }}</li>
+						</ul>
+					</div>
+					<div class="header-top-right">
+						<p><a href="lijixiazai.html">{{ denglu }}</a></p>
+					</div>
+				</div>
+				<div class="header-down">
+					<ul class="ulTwo">
+						<li><a href="index.html">{{ shouye }}</a></li>
+						<li><a href="gongluejieshao.html">{{ gonglue }}</a></li>
+						<li><a href="saishi.html">{{ caishi }}</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--轮播-->
+			<div class="body-one">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/下载 (1).jpg" /></div>
+						<div class="swiper-slide">
+							<img src="img/下载.jpg" /></div>
+						<div class="swiper-slide">
+							<img src="img/下载 (1).jpg" /></div>
+						<div class="swiper-slide">
+							<img src="img/下载 (1).jpg" /></div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="body-gang">
+			</div>
+			<div class="body-two row ">
+				<div class="col-xs-12 text-center body-two-top">
+					<div class="col-xs-4">
+						<div class="col-xs-2">
+							<img src="img/download (1).png" />
+						</div>
+						<div class="col-xs-7">
+							<h4><strong>{{remenshipin}}</strong></h4>
+						</div>
+					</div>
+					<div class="col-xs-4 col-xs-offset-4 ">
+						<h4 class="col-xs-4 active ri" @touchstart="rione">{{ri}}</h4>
+						<h4 class="col-xs-4 zhou" @touchstart="zhouone">{{zhou}}</h4>
+						<h4 class="col-xs-4 yue" @touchstart="yueone">{{yue}}</h4>
+					</div>
+				</div>
+				<div class="col-xs-12 body-two-bottom">
+					<ul v-if="rithree">
+						<li class="col-xs-12">
+							<img class="col-xs-6 rithreeimg " src="img/s3.PNG" />
+							<span class="col-xs-6">
+							<p>{{riullione}}</p>
+							<p class="body-two-bottom-ptwo">
+								<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+							<span><img src="img/捕获.PNG"/>{{riullionespantwo}}</span>
+							</p>
+							</span>
+						</li>
+						<li>{{riullier}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li>{{riullisan}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riullisi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riulliwu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riulliliu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riulliqi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riulliba}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riullijiu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="ritwo">{{riullishi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+
+					</ul>
+					<ul v-if="zhouthree">
+						<li class="col-xs-12">
+							<img class="col-xs-6 zhouthreeimg" src="img/s4.PNG" />
+							<span class="col-xs-6">
+							<p>{{riullione}}</p>
+							<p class="body-two-bottom-ptwo">
+								<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+							<span><img src="img/捕获.PNG"/>{{riullionespantwo}}</span>
+							</p>
+							</span>
+						</li>
+						<li>{{riullier}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li>{{riullisan}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riullisi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riulliwu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riulliliu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riulliqi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riulliba}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riullijiu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="zhoutwo">{{riullishi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+
+					</ul>
+					<ul v-if="yuethree">
+						<li class="col-xs-12">
+							<img class="col-xs-6 yuethreeimg" src="img/s5.PNG" />
+							<span class="col-xs-6">
+							<p>{{riullione}}</p>
+							<p class="body-two-bottom-ptwo">
+								<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+							<span><img src="img/捕获.PNG"/>{{riullionespantwo}}</span>
+							</p>
+							</span>
+						</li>
+						<li>{{riullier}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li>{{riullisan}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riullisi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riulliwu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riulliliu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riulliqi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riulliba}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riullijiu}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+						<li v-if="yuetwo">{{riullishi}}&nbsp;&nbsp;
+							<span><img src="img/1.PNG"/>{{riullionespanone}}</span>
+						</li>
+
+					</ul>
+					<h3 class="col-xs-12  text-center" @touchstart="chakanone" v-if="chakantwo">查看完整榜单</h3>
+					<h3 class="col-xs-12  text-center" @touchstart="shouqione" v-if="shouqi">收起榜单</h3>
+				</div>
+			</div>
+			<div class="body-gang">
+			</div>
+			<div class="body-three row">
+				<div class="col-xs-12 text-center body-two-top">
+					<div class="col-xs-4">
+						<div class="col-xs-2">
+							<img src="img/download (1).png" />
+						</div>
+						<div class="col-xs-7">
+							<h3><strong>{{bodythreetop}}</strong></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 body-three-bottom ">
+					<ul class="list-inline body-three-bottom-top">
+						<li><img src="img/106.jpg" />
+							<p>{{remen}}</p>
+						</li>
+						<li><img src="img/112.jpg" />
+							<p>{{remen}}</p>
+						</li>
+						<li><img src="img/131.jpg" />
+							<p>{{remen}}</p>
+						</li>
+						<li><img src="img/149.jpg" />
+							<p>{{xianmian}}</p>
+						</li>
+						<li><img src="img/167.jpg" />
+							<p>{{xianmian}}</p>
+						</li>
+						<li><img src="img/169.jpg" />
+							<p>{{xianmian}}</p>
+						</li>
+						<li><input type="button" class="btn btn-success" value="展开" @touchstart="zhankaione" v-if="zhankai" /></li>
+						<li><input type="button" class="btn btn-success" value="收起" @touchstart="shouqier" v-if="shouqitwo" />
+						</li>
+					</ul>
+					<!--二级菜单-->
+
+					<div class="col-lg-12 erjione " v-if="erjione">
+						<div class="col-xs-10 erjione-left">
+							<ul class="list-inline erjione-left-remen" v-if="erjioneleftone">
+								<li><img src="img/106.jpg" />
+									<p>{{xiaoqiao}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/113.jpg" />
+									<p>{{zhuangzhou}}</p>
+								</li>
+								<li><img src="img/131.jpg" />
+									<p>{{libai}}</p>
+								</li>
+								<li><img src="img/149.jpg" />
+									<p>{{liubang}}</p>
+								</li>
+								<li><img src="img/167.jpg" />
+									<p>{{sunwukong}}</p>
+								</li>
+								<li><img src="img/169.jpg" />
+									<p>{{houyi}}</p>
+								</li>
+								<li><img src="img/189.jpg" />
+									<p>{{guiguzi}}</p>
+								</li>
+								<li><img src="img/193.jpg" />
+									<p>{{kai}}</p>
+								</li>
+								<li><img src="img/515.jpg" />
+									<p>{{change}}</p>
+								</li>
+								<li><img src="img/529.jpg" />
+									<p>{{pangu}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{remen}}</p>
+								</li>
+							</ul>
+							<ul class="list-inline erjione-left-tanke" v-if="erjionelefttwo">
+								<li><img src="img/149.jpg" />
+									<p>{{liubang}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/106.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+							</ul>
+							<ul class="list-inline erjione-left-zhanshi" v-if="erjioneleftthree">
+								<li><img src="img/193.jpg" />
+									<p>{{kai}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/106.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+								<li><img src="img/112.jpg" />
+									<p>{{luban}}</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-2 text-center erjione-right">
+							<ul>
+								<li  v-on:touchstart="remenyi">{{remen}}</li>
+								<li v-on:touchstart="tankeone">{{tanke}}</li>
+								<li v-on:touchstart="zhanshione">{{zhanshi}}</li>
+								<li v-on:touchstart="cikeone">{{cike}}</li>
+								<li v-on:touchstart="fashione">{{fashi}}</li>
+								<li v-on:touchstart="sheshouone">{{sheshou}}</li>
+								<li v-on:touchstart="fuzhuone">{{fuzhu}}</li>
+							</ul>
+						</div>
+					</div>
+					<div class=" col-xs-12 body-three-bottomone">
+						<ul class="list-inline  ">
+							<li>{{houyi}}&nbsp;&nbsp;|&nbsp;</li>
+							<li>{{sheshou}}&nbsp;&nbsp;|&nbsp;</li>
+							<li>{{bodythreedengchang}}&nbsp;&nbsp;|&nbsp;</li>
+							<li>{{bodythreeshenglu}}&nbsp;&nbsp;|&nbsp;</li>
+							<li class="col-xs-offset-4">{{bodythreejieshao}}></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/下载 (4).jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreelingdu}}</strong></p>
+							<p>{{bodythreebottomthreelingbenqi}}</p>
+							<p>{{bodythreegang}}</p>
+						</div>
+					</div>
+					<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/750x422.1535036189.de5b11e78c78f9bd973133384a3bb6ad.750x422_34882.jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreesisan}}</strong></p>
+							<p>{{bodythreebottomthreelangyuxin}}</p>
+							<p>{{bodythreegang}}</p>
+						</div>
+					</div>
+					<div class=" col-xs-12 body-three-bottomfour text-center">
+						<h3>{{bodythreebottomfourjiazai}}<span >
+			       		"{{houyi}}"
+			       	</span>{{bodythreebottomfourgonglue}}</h3>
+					</div>
+				</div>
+
+			</div>
+			<div class="body-gang">
+			</div>
+		
+		<div class="body-foure row">
+			<div class="col-xs-12 text-center body-two-top">
+					<div class="col-xs-4">
+						<div class="col-xs-2">
+							<img src="img/download (1).png" />
+						</div>
+						<div class="col-xs-7">
+							<h3><strong>{{bodyfouretop}}</strong></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 body-foure-bottom">
+					<ul class="nav nav-tabs list-inline">
+						<li class="active"><a href="#bodyfoureone" data-toggle = "tab">{{bodyfourzuixin}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyfoureone}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyfoureer}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodyfouresi}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodyfouresi}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyfourewu}}</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="col-xs-12 tab-pane fade in active" id="bodyfoureone">
+							<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+						<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class=" col-xs-12 body-three-bottomfour text-center">
+						<h3>{{bodythreebottomfourjiazai}}<span >
+			       		"{{bodyfourzuixin}}"
+			       	</span>{{bodyfourneirong}}</h3>
+					</div>
+		</div>
+		<div class="body-gang">
+			</div>
+		<div class="body-five row">
+			<div class="col-xs-12 text-center body-two-top">
+					<div class="col-xs-4">
+						<div class="col-xs-2">
+							<img src="img/download (1).png" />
+						</div>
+						<div class="col-xs-7">
+							<h3><strong>{{saishijingpin}}</strong></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 body-foure-bottom">
+					<ul class="nav nav-tabs list-inline">
+						<li class="active"><a href="#bodyfoureone" data-toggle = "tab">{{bodyfourzuixin}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyfiveone}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyfivetwo}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodyfivesan}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodyfivesi}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyfivewu}}</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="col-xs-12 tab-pane fade in active" id="bodyfoureone">
+							<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+						<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class=" col-xs-12 body-three-bottomfour text-center">
+						<h3>{{bodythreebottomfourjiazai}}<span >
+			       		"{{bodyfourzuixin}}"
+			       	</span>{{bodyfourneirong}}</h3>
+					</div>
+		</div>
+		<div class="body-gang">
+			</div>
+			<div class="body-six row">
+			<div class="col-xs-12 text-center body-two-top">
+					<div class="col-xs-4">
+						<div class="col-xs-2">
+							<img src="img/download (1).png" />
+						</div>
+						<div class="col-xs-7">
+							<h3><strong>{{bodysixtop}}</strong></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 body-six-bottom">
+					<ul class="nav nav-tabs list-inline">
+						<li class="active"><a href="#bodyfoureone" data-toggle = "tab">{{bodysixone}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodysixtwo}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodysixsan}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodysixsi}}</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="col-xs-12 tab-pane fade in active" id="bodyfoureone">
+							<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+						<div class="col-xs-12 body-three-bottomtwo">
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s.PNG" />
+							</div>
+							<p><strong>{{bodythreejineng}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+
+						</div>
+						<div class="col-xs-6">
+							<div class="body-three-bottomtwoimgone">
+								<img src="img/s1.PNG" />
+							</div>
+
+							<p> <strong>{{bodythreerongyao}}</strong></p>
+							<div class="body-three-bottomtwoimgtwo">
+								<img src="img/1.PNG" /><span>{{riullionespanone}}</span>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class=" col-xs-12 body-three-bottomfour text-center">
+						<h3>{{bodythreebottomfourjiazai}}<span >
+			       		"{{bodyfourzuixin}}"
+			       	</span>{{bodyfourneirong}}</h3>
+					</div>
+		</div>
+		<div class="body-gang">
+			</div>
+				<div class="body-qi row">
+			<div class="col-xs-12 text-center body-two-top">
+					<div class="col-xs-4">
+						<div class="col-xs-2">
+							<img src="img/download (1).png" />
+						</div>
+						<div class="col-xs-7">
+							<h3><strong>{{bodyqitop}}</strong></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 body-qi-bottom">
+					<ul class="nav nav-tabs list-inline">
+						<li class="active"><a href="#bodyfoureone" data-toggle = "tab">{{bodyfourzuixin}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyqione}}</a></li>
+						<li ><a href="#bodyfoureone" data-toggle = "tab">{{bodyqisan}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodyqisi}}</a></li>
+						<li><a href="#bodyfoureone" data-toggle = "tab">{{bodyqiwu}}</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="col-xs-12 tab-pane fade in active" id="bodyfoureone">
+						<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/下载 (4).jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreelingdu}}</strong></p>
+							<p>{{bodythreebottomthreelingbenqi}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+					<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/750x422.1535036189.de5b11e78c78f9bd973133384a3bb6ad.750x422_34882.jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreesisan}}</strong></p>
+							<p>{{bodythreebottomthreelangyuxin}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>	
+						<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/下载 (4).jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreelingdu}}</strong></p>
+							<p>{{bodythreebottomthreelingbenqi}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+					<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/750x422.1535036189.de5b11e78c78f9bd973133384a3bb6ad.750x422_34882.jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreesisan}}</strong></p>
+							<p>{{bodythreebottomthreelangyuxin}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+						<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/下载 (4).jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreelingdu}}</strong></p>
+							<p>{{bodythreebottomthreelingbenqi}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+					<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/750x422.1535036189.de5b11e78c78f9bd973133384a3bb6ad.750x422_34882.jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreesisan}}</strong></p>
+							<p>{{bodythreebottomthreelangyuxin}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+						<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/下载 (4).jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreelingdu}}</strong></p>
+							<p>{{bodythreebottomthreelingbenqi}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+					<div class="col-xs-12  body-three-bottomthree">
+						<div class="col-xs-5">
+							<img src="img/750x422.1535036189.de5b11e78c78f9bd973133384a3bb6ad.750x422_34882.jpg" />
+						</div>
+						<div class="col-xs-7">
+							<p> <strong>{{bodythreebottomthreesisan}}</strong></p>
+							<p>{{bodythreebottomthreelangyuxin}}</p>
+							<p>{{shijian}}</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class=" col-xs-12 body-three-bottomfour text-center">
+						<h3>{{bodyqidi}}</h3>
+					</div>
+		</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lib-flex.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/gongluejieshao.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/gongluejieshaojq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/gongluejieshaolunbo.js" type="text/javascript" charset="utf-8"></script>
+		
+
+</html>
